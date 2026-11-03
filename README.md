@@ -2,6 +2,8 @@
 
 The landing page of the OpenPrunus games: a static page (HTML, CSS and a little JavaScript, no build step) that presents
 
+- [**Knock Knock**](https://github.com/OpenPrunus/knock-knock) — a memory game with doors that all look different, a bandit and a detective,
+  solo, against the computer, on the same screen or online.
 - [**Blockfall**](https://github.com/OpenPrunus/blockfall) — a falling-blocks puzzle, solo, against the computer or online,
 - [**Hillshot**](https://github.com/OpenPrunus/hillshot) — a turn-based artillery duel across a hill,
 - [**Gloop Volley**](https://github.com/OpenPrunus/gloop-volley) — slime volleyball,
