@@ -3,7 +3,7 @@ export const DICT = {
   fr: {
     skip: 'Aller aux jeux',
     eyebrow: 'prunus.dev · jeux',
-    heroTitle: 'Quatre jeux, <em>aucune installation.</em>',
+    heroTitle: 'Cinq jeux, <em>aucune installation.</em>',
     heroLead: 'Des jeux à lancer directement dans le navigateur, sur téléphone comme sur ordinateur : contre l\'ordinateur, à deux sur le même écran ou en ligne avec classement. Pas de compte, pas de pub.',
     factGames: 'jeux à essayer',
     factAccounts: 'compte à créer',
@@ -43,7 +43,7 @@ export const DICT = {
   en: {
     skip: 'Skip to the games',
     eyebrow: 'prunus.dev · games',
-    heroTitle: 'Four games, <em>nothing to install.</em>',
+    heroTitle: 'Five games, <em>nothing to install.</em>',
     heroLead: 'Games you launch straight from the browser, on a phone or on a computer: against the computer, two on the same screen, or online with a leaderboard. No account, no ads.',
     factGames: 'games to try',
     factAccounts: 'account to create',
