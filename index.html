@@ -36,7 +36,7 @@
       <h1 data-i18n-html="heroTitle"></h1>
       <p class="lead" data-i18n="heroLead"></p>
       <ul class="facts" aria-label="Facts">
-        <li><b>3</b><span data-i18n="factGames"></span></li>
+        <li><b>4</b><span data-i18n="factGames"></span></li>
         <li><b>0</b><span data-i18n="factAccounts"></span></li>
         <li><b>FR · EN</b><span data-i18n="factLang"></span></li>
         <li><b>100&nbsp;%</b><span data-i18n="factBrowser"></span></li>
@@ -47,16 +47,35 @@
         <img class="a1" src="assets/hillshot.webp" width="1280" height="720" alt="">
         <img class="a2" src="assets/gloop-volley.webp" width="1280" height="720" alt="">
         <img class="a3" src="assets/chicken-challenge.webp" width="1280" height="720" alt="">
+        <img class="a4" src="assets/blockfall.webp" width="1280" height="720" alt="">
       </div>
     </section>
 
     <section id="games" class="games" aria-labelledby="games-title">
       <h2 id="games-title" class="sr" data-i18n="gamesTitle"></h2>
 
+      <article class="card" id="blockfall">
+        <a class="shot" href="https://blockfall.prunus.dev" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/blockfall.webp" width="1280" height="720" alt="" loading="lazy">
+          <span class="badge" data-i18n="badgeNew"></span>
+        </a>
+        <div class="body">
+          <p class="kind" data-i18n="blockKind"></p>
+          <h3>Blockfall</h3>
+          <p data-i18n="blockText"></p>
+          <ul class="tags">
+            <li data-i18n="tagSolo"></li><li data-i18n="tagAi"></li><li data-i18n="tagDuel"></li><li data-i18n="tagOnline"></li><li data-i18n="tagTouch"></li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="https://blockfall.prunus.dev" target="_blank" rel="noopener"><span data-i18n="play"></span><span aria-hidden="true"> →</span></a>
+            <a class="btn" href="https://github.com/OpenPrunus/blockfall" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#gh"/></svg><span data-i18n="code"></span></a>
+          </div>
+        </div>
+      </article>
+
       <article class="card" id="hillshot">
         <a class="shot" href="https://hillshot.prunus.dev" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
           <img src="assets/hillshot.webp" width="1280" height="720" alt="" loading="lazy">
-          <span class="badge" data-i18n="badgeNew"></span>
         </a>
         <div class="body">
           <p class="kind" data-i18n="hillKind"></p>

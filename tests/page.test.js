@@ -26,17 +26,17 @@ test('toutes les ressources locales existent', () => {
   for (const r of ['assets/og.png', 'favicon.svg']) assert.ok(fs.existsSync(path.join(ROOT, r)), r);
 });
 
-test('les trois jeux sont présentés, avec leur lien de jeu et leur dépôt', () => {
-  for (const [site, repo] of [['hillshot', 'hillshot'], ['gloopvolley', 'gloop-volley'], ['chickenchallenge', 'chicken-challenge']]) {
+test('les quatre jeux sont présentés, avec leur lien de jeu et leur dépôt', () => {
+  for (const [site, repo] of [['blockfall', 'blockfall'], ['hillshot', 'hillshot'], ['gloopvolley', 'gloop-volley'], ['chickenchallenge', 'chicken-challenge']]) {
     assert.match(html, new RegExp(`href="https://${site}\\.prunus\\.dev"`), site);
     assert.match(html, new RegExp(`href="https://github\\.com/OpenPrunus/${repo}"`), repo);
   }
-  assert.equal([...html.matchAll(/<article class="card"/g)].length, 3);
+  assert.equal([...html.matchAll(/<article class="card"/g)].length, 4);
 });
 
 test('les liens externes s\'ouvrent dans un nouvel onglet sans donner accès à la page', () => {
   const links = [...html.matchAll(/<a [^>]*href="https?:[^>]*>/g)].map((m) => m[0]);
-  assert.ok(links.length >= 8);
+  assert.ok(links.length >= 10);
   for (const a of links) {
     assert.match(a, /target="_blank"/, a);
     assert.match(a, /rel="[^"]*noopener/, a);
