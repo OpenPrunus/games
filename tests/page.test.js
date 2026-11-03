@@ -52,7 +52,7 @@ test('métadonnées : titre, description, partage social, langue, viewport', () 
 });
 
 test('aucun script ni style en ligne (la politique de sécurité du contenu les interdit)', () => {
-  assert.doesNotMatch(html.replace(/<script type="module" src="[^"]+"><\/script>/g, ''), /<script/);
+  assert.doesNotMatch(html.replace(/<script (?:type="module" )?src="[^"]+"(?: defer)?><\/script>/g, ''), /<script/);
   assert.doesNotMatch(html, /<style/);
   assert.doesNotMatch(html, /\sstyle="/);
 });

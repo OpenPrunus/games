@@ -36,3 +36,7 @@ The images in `assets/` are captures (WebP, 1280×720) of the live games; replac
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Offline
+
+**Installable and playable offline** (PWA): web manifest, icons, and a service worker that serves the last visit's files when there is no network. Solo and computer modes work offline; online play shows a clear message.

@@ -7,7 +7,7 @@
   "license": "MIT",
   "engines": { "node": ">=22" },
   "scripts": {
-    "test": "node --test tests/page.test.js",
+    "test": "node --test tests/page.test.js tests/pwa.test.js",
     "serve": "python3 -m http.server 8094"
   }
 }
