@@ -3,10 +3,10 @@
 The landing page of the OpenPrunus games: a static page (HTML, CSS and a little JavaScript, no build step) that presents
 
 - [**Hillshot**](https://github.com/OpenPrunus/hillshot) — a turn-based artillery duel across a hill,
-- [**Gloop Volley**](https://github.com/OpenPrunus/gloop-volley) — slime volleyball with a 60 Hz authoritative server,
+- [**Gloop Volley**](https://github.com/OpenPrunus/gloop-volley) — slime volleyball,
 - [**Chicken Challenge**](https://github.com/OpenPrunus/chicken-challenge) — a chicken-throwing arcade game,
 
-all written in JavaScript on the client and PHP 8.5 on the server, sharing the [`arcade-core`](https://github.com/OpenPrunus/arcade-core) WebSocket foundation.
+playable in the browser, on a phone or a computer, with no account.
 
 French and English (browser language, switchable), light and dark theme (system setting, switchable), responsive down to a phone,
 no tracking, no external request: fonts are the system's, images are local, and a strict Content-Security-Policy is served.

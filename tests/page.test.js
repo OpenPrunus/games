@@ -15,13 +15,13 @@ test('le français et l\'anglais ont les mêmes clés, toutes non vides, avec le
 
 test('toutes les clés utilisées par la page existent', () => {
   const used = [...html.matchAll(/data-i18n(?:-html)?="(\w+)"/g)].map((m) => m[1]);
-  assert.ok(used.length > 40, `${used.length} clés`);
+  assert.ok(used.length > 30, `${used.length} clés`);
   for (const k of used) assert.ok(k in DICT.fr, `clé inconnue : ${k}`);
 });
 
 test('toutes les ressources locales existent', () => {
   const refs = [...html.matchAll(/(?:src|href)="([^"#:]+)"/g)].map((m) => m[1]).filter((r) => !r.startsWith('/') || r.length > 1);
-  assert.ok(refs.length >= 8);
+  assert.ok(refs.length >= 6);
   for (const r of refs) assert.ok(fs.existsSync(path.join(ROOT, r)), `ressource manquante : ${r}`);
   for (const r of ['assets/og.png', 'favicon.svg']) assert.ok(fs.existsSync(path.join(ROOT, r)), r);
 });
@@ -36,7 +36,7 @@ test('les trois jeux sont présentés, avec leur lien de jeu et leur dépôt', (
 
 test('les liens externes s\'ouvrent dans un nouvel onglet sans donner accès à la page', () => {
   const links = [...html.matchAll(/<a [^>]*href="https?:[^>]*>/g)].map((m) => m[0]);
-  assert.ok(links.length >= 10);
+  assert.ok(links.length >= 8);
   for (const a of links) {
     assert.match(a, /target="_blank"/, a);
     assert.match(a, /rel="[^"]*noopener/, a);
@@ -55,4 +55,11 @@ test('aucun script ni style en ligne (la politique de sécurité du contenu les 
   assert.doesNotMatch(html.replace(/<script type="module" src="[^"]+"><\/script>/g, ''), /<script/);
   assert.doesNotMatch(html, /<style/);
   assert.doesNotMatch(html, /\sstyle="/);
+});
+
+test('la page parle des jeux, pas de leur technique : aucune mention de langage, de serveur ni de « sous le capot »', () => {
+  const visible = html.replace(/<svg[\s\S]*?<\/svg>/g, '') + JSON.stringify(DICT);
+  assert.doesNotMatch(visible, /sous le capot|under the hood/i);
+  assert.doesNotMatch(visible, /\bPHP\b|JavaScript|WebSocket|60\s*Hz|framework|arcade-core/i);
+  assert.equal([...html.matchAll(/<section/g)].length, 2, 'le haut de page et les jeux, rien d\'autre');
 });

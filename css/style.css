@@ -86,7 +86,6 @@ main { width: min(1180px, 100% - 40px); margin: 0 auto; }
 h1 { margin: 0; font-size: clamp(38px, 7vw, 76px); line-height: 1.02; letter-spacing: -0.03em; font-weight: 800; text-wrap: balance; }
 h1 em { font-style: normal; background: linear-gradient(100deg, var(--brand), #ff7ab8 55%, #ffb224); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .lead { margin: 22px 0 0; max-width: 62ch; font-size: clamp(17px, 2.2vw, 20px); color: var(--muted); text-wrap: pretty; }
-.lead.small { font-size: 17px; }
 .facts { display: flex; flex-wrap: wrap; gap: 12px 34px; list-style: none; margin: 34px 0 0; padding: 0; }
 .facts li { display: flex; flex-direction: column; }
 .facts b { font-size: 26px; letter-spacing: -0.02em; }
@@ -124,25 +123,6 @@ h3 { margin: 2px 0 8px; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.1; l
 .btn.primary { background: var(--accent); border-color: transparent; color: #fff; box-shadow: 0 12px 26px -12px var(--accent); }
 .btn.primary:hover { filter: brightness(1.07); background: var(--accent); }
 
-/* ---------- sous le capot ---------- */
-.under { padding: clamp(40px, 6vw, 72px) 0 clamp(56px, 8vw, 96px); border-top: 1px solid var(--line); }
-h2 { margin: 0 0 10px; font-size: clamp(28px, 4.2vw, 44px); letter-spacing: -0.025em; line-height: 1.08; }
-.flow { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: stretch; gap: 0; margin: 38px 0 30px; }
-.node { display: flex; flex-direction: column; justify-content: center; gap: 4px; padding: 20px 22px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; }
-.node b { font-size: 17px; }
-.node span { font-size: 13px; color: var(--muted); }
-.node.strong { background: linear-gradient(135deg, color-mix(in srgb, var(--brand) 26%, var(--card)), var(--card)); border-color: color-mix(in srgb, var(--brand) 50%, var(--line)); }
-.node a { color: var(--brand); font-weight: 700; }
-.link { display: grid; place-items: center; min-width: 74px; position: relative; font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-.link::before { content: ''; position: absolute; left: 6px; right: 6px; top: 50%; border-top: 2px dashed color-mix(in srgb, var(--brand) 55%, transparent); }
-.link span { position: relative; padding: 2px 8px; background: var(--bg); border-radius: 999px; }
-.pillars { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
-.pillars article { padding: 22px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; }
-.pillars h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: -0.01em; }
-.pillars p { margin: 0; font-size: 14.5px; color: var(--muted); }
-.stack { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 30px 0 0; padding: 0; }
-.stack li { padding: 5px 13px; border-radius: 10px; font-size: 13px; font-weight: 600; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--bg-2); border: 1px solid var(--line); color: var(--muted); }
-
 .foot { width: min(1180px, 100% - 40px); margin: 0 auto; padding: 26px 0 calc(40px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
 .foot p { margin: 0; }
 .foot a { color: var(--ink); text-decoration-color: var(--line); text-underline-offset: 3px; }
@@ -159,13 +139,8 @@ h2 { margin: 0 0 10px; font-size: clamp(28px, 4.2vw, 44px); letter-spacing: -0.0
   .card::before, .card:nth-of-type(even)::before { inset: 0 0 auto 0; width: auto; height: 4px; }
   .hero { grid-template-columns: 1fr; }
   .hero-art { max-width: 560px; width: 100%; margin: 0 auto; }
-  .pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .flow { grid-template-columns: 1fr; }
-  .link { min-height: 44px; }
-  .link::before { left: 50%; right: auto; top: 4px; bottom: 4px; border-top: 0; border-left: 2px dashed color-mix(in srgb, var(--brand) 55%, transparent); }
 }
 @media (max-width: 520px) {
-  .pillars { grid-template-columns: 1fr; }
   .facts { gap: 14px 26px; }
   .hero-art { aspect-ratio: 1 / 0.98; }
   .actions .btn { flex: 1 1 auto; justify-content: center; }
