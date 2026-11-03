@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Prunus Games</title>
+  <meta name="description" content="Trois jeux dans le navigateur : Chicken Challenge, Gloop Volley et Hillshot. Contre l'ordinateur, à deux ou en ligne, JavaScript côté client et PHP 8.5 côté serveur.">
+  <meta name="theme-color" content="#0d1424">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prunus Games">
+  <meta property="og:description" content="Chicken Challenge, Gloop Volley, Hillshot : trois jeux dans le navigateur, avec un vrai serveur multijoueur PHP 8.5.">
+  <meta property="og:image" content="https://games.prunus.dev/assets/og.png">
+  <meta property="og:url" content="https://games.prunus.dev/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#games" data-i18n="skip"></a>
+
+  <header class="top">
+    <a class="brand" href="/" aria-label="Prunus Games">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor" opacity=".14"/><path d="M6 22l6-9 5 6 3-4 6 7z" fill="currentColor"/><circle cx="22" cy="10" r="3" fill="currentColor"/></svg>
+      <span>prunus<b>.games</b></span>
+    </a>
+    <nav class="tools">
+      <button id="theme" class="chip" type="button" aria-label="Theme"><span data-icon></span></button>
+      <button id="lang" class="chip" type="button" aria-label="Language">FR</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+      <p class="eyebrow" data-i18n="eyebrow"></p>
+      <h1 data-i18n-html="heroTitle"></h1>
+      <p class="lead" data-i18n="heroLead"></p>
+      <ul class="facts" aria-label="Facts">
+        <li><b>3</b><span data-i18n="factGames"></span></li>
+        <li><b>0</b><span data-i18n="factAccounts"></span></li>
+        <li><b>60&nbsp;Hz</b><span data-i18n="factTick"></span></li>
+        <li><b>PHP&nbsp;8.5</b><span data-i18n="factPhp"></span></li>
+      </ul>
+      <a class="cta" href="#games"><span data-i18n="ctaPlay"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v13m0 0l-5-5m5 5l5-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img class="a1" src="assets/hillshot.webp" width="1280" height="720" alt="">
+        <img class="a2" src="assets/gloop-volley.webp" width="1280" height="720" alt="">
+        <img class="a3" src="assets/chicken-challenge.webp" width="1280" height="720" alt="">
+      </div>
+    </section>
+
+    <section id="games" class="games" aria-labelledby="games-title">
+      <h2 id="games-title" class="sr" data-i18n="gamesTitle"></h2>
+
+      <article class="card" id="hillshot">
+        <a class="shot" href="https://hillshot.prunus.dev" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/hillshot.webp" width="1280" height="720" alt="" loading="lazy">
+          <span class="badge" data-i18n="badgeNew"></span>
+        </a>
+        <div class="body">
+          <p class="kind" data-i18n="hillKind"></p>
+          <h3>Hillshot</h3>
+          <p data-i18n="hillText"></p>
+          <ul class="tags">
+            <li data-i18n="tagTurn"></li><li data-i18n="tagWind"></li><li data-i18n="tagAi"></li><li data-i18n="tagLocal"></li><li data-i18n="tagOnline"></li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="https://hillshot.prunus.dev" target="_blank" rel="noopener"><span data-i18n="play"></span><span aria-hidden="true"> →</span></a>
+            <a class="btn" href="https://github.com/OpenPrunus/hillshot" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#gh"/></svg><span data-i18n="code"></span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="gloop">
+        <a class="shot" href="https://gloopvolley.prunus.dev" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/gloop-volley.webp" width="1280" height="720" alt="" loading="lazy">
+        </a>
+        <div class="body">
+          <p class="kind" data-i18n="gloopKind"></p>
+          <h3>Gloop Volley</h3>
+          <p data-i18n="gloopText"></p>
+          <ul class="tags">
+            <li data-i18n="tagReal"></li><li data-i18n="tagAi"></li><li data-i18n="tagLocal"></li><li data-i18n="tagOnline"></li><li data-i18n="tagTouch"></li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="https://gloopvolley.prunus.dev" target="_blank" rel="noopener"><span data-i18n="play"></span><span aria-hidden="true"> →</span></a>
+            <a class="btn" href="https://github.com/OpenPrunus/gloop-volley" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#gh"/></svg><span data-i18n="code"></span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="chicken">
+        <a class="shot" href="https://chickenchallenge.prunus.dev" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/chicken-challenge.webp" width="1280" height="720" alt="" loading="lazy">
+        </a>
+        <div class="body">
+          <p class="kind" data-i18n="chickenKind"></p>
+          <h3>Chicken Challenge</h3>
+          <p data-i18n="chickenText"></p>
+          <ul class="tags">
+            <li data-i18n="tagArcade"></li><li data-i18n="tagAi3"></li><li data-i18n="tagOnline"></li><li data-i18n="tagAnti"></li><li data-i18n="tagTouch"></li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="https://chickenchallenge.prunus.dev" target="_blank" rel="noopener"><span data-i18n="play"></span><span aria-hidden="true"> →</span></a>
+            <a class="btn" href="https://github.com/OpenPrunus/chicken-challenge" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#gh"/></svg><span data-i18n="code"></span></a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="under" aria-labelledby="under-title">
+      <h2 id="under-title" data-i18n="underTitle"></h2>
+      <p class="lead small" data-i18n="underLead"></p>
+
+      <figure class="flow" aria-label="Architecture">
+        <div class="node"><b data-i18n="flowBrowser"></b><span>JavaScript · Canvas · Web Audio</span></div>
+        <div class="link"><span>WebSocket</span></div>
+        <div class="node strong"><b data-i18n="flowServer"></b><span>PHP 8.5 · PSR · <a href="https://github.com/OpenPrunus/arcade-core" target="_blank" rel="noopener">arcade-core</a></span></div>
+        <div class="link"><span>JSON</span></div>
+        <div class="node"><b data-i18n="flowRanking"></b><span data-i18n="flowRankingSub"></span></div>
+      </figure>
+
+      <div class="pillars">
+        <article><h3 data-i18n="p1Title"></h3><p data-i18n="p1Text"></p></article>
+        <article><h3 data-i18n="p2Title"></h3><p data-i18n="p2Text"></p></article>
+        <article><h3 data-i18n="p3Title"></h3><p data-i18n="p3Text"></p></article>
+        <article><h3 data-i18n="p4Title"></h3><p data-i18n="p4Text"></p></article>
+      </div>
+
+      <ul class="stack" aria-label="Stack">
+        <li>PHP 8.5</li><li>PSR-12</li><li>PHPStan 8</li><li>PHPUnit</li><li>JavaScript</li><li>Canvas</li><li>WebSocket RFC 6455</li><li>Docker</li><li>GitHub Actions</li><li>Elo</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p><span data-i18n="madeBy"></span> · <span data-i18n="license"></span> · <a href="https://github.com/OpenPrunus" target="_blank" rel="noopener">github.com/OpenPrunus</a></p>
+    <p class="muted"><a href="https://github.com/OpenPrunus/games" target="_blank" rel="noopener" data-i18n="pageSource"></a></p>
+  </footer>
+
+  <svg class="defs" width="0" height="0" aria-hidden="true"><symbol id="gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol></svg>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

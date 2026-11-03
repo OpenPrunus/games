@@ -1,0 +1,13 @@
+{
+  "name": "games",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Landing page of the OpenPrunus games (static HTML, CSS and a little JavaScript)",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test tests/page.test.js",
+    "serve": "python3 -m http.server 8094"
+  }
+}
