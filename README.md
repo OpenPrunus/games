@@ -3,6 +3,7 @@
 The landing page of the OpenPrunus games: a static page (HTML, CSS and a little JavaScript, no build step) that presents
 
 - [**Cliffwalkers**](https://github.com/OpenPrunus/cliffwalkers) — a puzzle game: give skills to a line of little walkers to lead them to the exit.
+- [**Kartrush**](https://github.com/OpenPrunus/kartrush) — a pseudo-3D kart race: four tracks, drifts, items, AI drivers.
 - [**Brickbash**](https://github.com/OpenPrunus/brickbash) — the classic breakout: ten levels, bonuses, steel and explosive bricks.
 - [**Knock Knock**](https://github.com/OpenPrunus/knock-knock) — a memory game with doors that all look different, a bandit and a detective,
   solo, against the computer, on the same screen or online.
