@@ -3,6 +3,7 @@
 The landing page of the OpenPrunus games: a static page (HTML, CSS and a little JavaScript, no build step) that presents
 
 - [**Cliffwalkers**](https://github.com/OpenPrunus/cliffwalkers) — a puzzle game: give skills to a line of little walkers to lead them to the exit.
+- [**Vectorstrike**](https://github.com/OpenPrunus/vectorstrike) — a neon wireframe 3D arcade shooter: waves, bosses, bonuses, one or two players.
 - [**Pipejump**](https://github.com/OpenPrunus/pipejump) — a platformer: four levels, enemies, blocks, a mushroom and a flag.
 - [**Kartrush**](https://github.com/OpenPrunus/kartrush) — a pseudo-3D kart race: four tracks, drifts, items, AI drivers.
 - [**Brickbash**](https://github.com/OpenPrunus/brickbash) — the classic breakout: ten levels, bonuses, steel and explosive bricks.

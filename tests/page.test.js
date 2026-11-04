@@ -26,12 +26,12 @@ test('toutes les ressources locales existent', () => {
   for (const r of ['assets/og.png', 'favicon.svg']) assert.ok(fs.existsSync(path.join(ROOT, r)), r);
 });
 
-test('les neuf jeux sont présentés, avec leur lien de jeu et leur dépôt', () => {
-  for (const [site, repo] of [['blockfall', 'blockfall'], ['hillshot', 'hillshot'], ['gloopvolley', 'gloop-volley'], ['chickenchallenge', 'chicken-challenge'], ['knockknock', 'knock-knock'], ['cliffwalkers', 'cliffwalkers'], ['brickbash', 'brickbash'], ['kartrush', 'kartrush'], ['pipejump', 'pipejump']]) {
+test('les dix jeux sont présentés, avec leur lien de jeu et leur dépôt', () => {
+  for (const [site, repo] of [['blockfall', 'blockfall'], ['hillshot', 'hillshot'], ['gloopvolley', 'gloop-volley'], ['chickenchallenge', 'chicken-challenge'], ['knockknock', 'knock-knock'], ['cliffwalkers', 'cliffwalkers'], ['brickbash', 'brickbash'], ['kartrush', 'kartrush'], ['pipejump', 'pipejump'], ['vectorstrike', 'vectorstrike']]) {
     assert.match(html, new RegExp(`href="https://${site}\\.prunus\\.dev"`), site);
     assert.match(html, new RegExp(`href="https://github\\.com/OpenPrunus/${repo}"`), repo);
   }
-  assert.equal([...html.matchAll(/<article class="card"/g)].length, 9);
+  assert.equal([...html.matchAll(/<article class="card"/g)].length, 10);
 });
 
 test('les liens externes s\'ouvrent dans un nouvel onglet sans donner accès à la page', () => {
