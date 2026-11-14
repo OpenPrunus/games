@@ -14,6 +14,8 @@ export const DICT = {
     badgeNew: 'Nouveau',
     play: 'Jouer',
     code: 'Code source',
+    bug: 'Signaler un bug sur GitHub',
+    bugFoot: 'Un bug ? Dis-le-nous',
     sevenKind: 'Cartes · solitaire',
     sevenText: 'Le solitaire classique : sept colonnes à démêler, quatre fondations à remplir de l\'as au roi. Tirer une ou trois cartes, des donnes dont une solution est garantie, annulation illimitée et indices. Glissez les cartes ou touchez-les pour qu\'elles se rangent seules, et ça marche même hors ligne.',
     brambleKind: 'Aventure · monde partagé',
@@ -70,6 +72,8 @@ export const DICT = {
     badgeNew: 'New',
     play: 'Play',
     code: 'Source code',
+    bug: 'Report a bug on GitHub',
+    bugFoot: 'Found a bug? Tell us',
     sevenKind: 'Cards · solitaire',
     sevenText: 'Classic solitaire: untangle seven columns and fill four foundations from ace to king. Draw one or three cards, deals with a guaranteed solution, unlimited undo and hints. Drag the cards or tap them to send them where they belong, and it even works offline.',
     brambleKind: 'Adventure · shared world',
@@ -134,6 +138,7 @@ function applyLang(l) {
   document.documentElement.lang = l;
   for (const el of document.querySelectorAll('[data-i18n]')) el.textContent = t(el.dataset.i18n);
   for (const el of document.querySelectorAll('[data-i18n-html]')) el.innerHTML = t(el.dataset.i18nHtml);
+  for (const el of document.querySelectorAll('[data-i18n-label]')) { el.title = t(el.dataset.i18nLabel); el.setAttribute('aria-label', t(el.dataset.i18nLabel)); }
   document.querySelector('#lang').textContent = l.toUpperCase();
 }
 
