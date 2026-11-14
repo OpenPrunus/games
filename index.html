@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Prunus Games</title>
-  <meta name="description" content="Onze jeux à jouer dans le navigateur : Chicken Challenge, Gloop Volley, Hillshot, Blockfall, Knock Knock, Cliffwalkers, Brickbash, Kartrush, Pipejump, Vectorstrike et Bramblekin. Contre l'ordinateur, à deux ou en ligne, sans compte.">
+  <meta name="description" content="Douze jeux à jouer dans le navigateur : Chicken Challenge, Gloop Volley, Hillshot, Blockfall, Knock Knock, Cliffwalkers, Brickbash, Kartrush, Pipejump, Vectorstrike, Bramblekin et Sevenstacks. Contre l'ordinateur, à deux ou en ligne, sans compte.">
   <meta name="theme-color" content="#0d1424">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -13,7 +13,7 @@
   <script src="pwa.js" defer></script>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Prunus Games">
-  <meta property="og:description" content="Chicken Challenge, Gloop Volley, Hillshot, Blockfall, Knock Knock, Cliffwalkers, Brickbash, Kartrush, Pipejump, Vectorstrike, Bramblekin : onze jeux à jouer dans le navigateur, seul, à deux ou en ligne.">
+  <meta property="og:description" content="Chicken Challenge, Gloop Volley, Hillshot, Blockfall, Knock Knock, Cliffwalkers, Brickbash, Kartrush, Pipejump, Vectorstrike, Bramblekin, Sevenstacks : douze jeux à jouer dans le navigateur, seul, à deux ou en ligne.">
   <meta property="og:image" content="https://games.prunus.dev/assets/og.png">
   <meta property="og:url" content="https://games.prunus.dev/">
   <meta name="twitter:card" content="summary_large_image">
@@ -59,10 +59,28 @@
     <section id="games" class="games" aria-labelledby="games-title">
       <h2 id="games-title" class="sr" data-i18n="gamesTitle"></h2>
 
+      <article class="card" id="sevenstacks">
+        <a class="shot" href="https://sevenstacks.prunus.dev" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/sevenstacks.webp" width="1280" height="720" alt="" loading="lazy">
+          <span class="badge" data-i18n="badgeNew"></span>
+        </a>
+        <div class="body">
+          <p class="kind" data-i18n="sevenKind"></p>
+          <h3>Sevenstacks</h3>
+          <p data-i18n="sevenText"></p>
+          <ul class="tags">
+            <li data-i18n="tagSolo"></li><li data-i18n="tagWinnable"></li><li data-i18n="tagTouch"></li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="https://sevenstacks.prunus.dev" target="_blank" rel="noopener"><span data-i18n="play"></span><span aria-hidden="true"> →</span></a>
+            <a class="btn" href="https://github.com/OpenPrunus/sevenstacks" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#gh"/></svg><span data-i18n="code"></span></a>
+          </div>
+        </div>
+      </article>
+
       <article class="card" id="bramblekin">
         <a class="shot" href="https://bramblekin.prunus.dev" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
           <img src="assets/bramblekin.webp" width="1280" height="720" alt="" loading="lazy">
-          <span class="badge" data-i18n="badgeNew"></span>
         </a>
         <div class="body">
           <p class="kind" data-i18n="brambleKind"></p>

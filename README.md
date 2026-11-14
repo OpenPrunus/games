@@ -3,6 +3,7 @@
 The landing page of the OpenPrunus games: a static page (HTML, CSS and a little JavaScript, no build step) that presents
 
 - [**Cliffwalkers**](https://github.com/OpenPrunus/cliffwalkers) — a puzzle game: give skills to a line of little walkers to lead them to the exit.
+- [**Sevenstacks**](https://github.com/OpenPrunus/sevenstacks) — classic Klondike solitaire: draw 1 or 3, winnable deals, undo and hints.
 - [**Bramblekin**](https://github.com/OpenPrunus/bramblekin) — an online creature-collecting adventure in a shared world: 150 creatures, ten towns, duels and trades.
 - [**Vectorstrike**](https://github.com/OpenPrunus/vectorstrike) — a neon wireframe 3D arcade shooter: waves, bosses, bonuses, one or two players.
 - [**Pipejump**](https://github.com/OpenPrunus/pipejump) — a platformer: four levels, enemies, blocks, a mushroom and a flag.
