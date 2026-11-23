@@ -2,6 +2,7 @@
 
 The landing page of the OpenPrunus games: a static page (HTML, CSS and a little JavaScript, no build step) that presents
 
+- **Bulwark** — a tower defense: four towers, six levels, upgrades, bosses (source on the internal Gitea).
 - **Metropolia** — a SimCity-style city builder: 256×256 map, zones, power and water networks, trains and metro (source on the internal Gitea).
 - [**Cliffwalkers**](https://github.com/OpenPrunus/cliffwalkers) — a puzzle game: give skills to a line of little walkers to lead them to the exit.
 - [**Sevenstacks**](https://github.com/OpenPrunus/sevenstacks) — classic Klondike solitaire: draw 1 or 3, winnable deals, undo and hints.
